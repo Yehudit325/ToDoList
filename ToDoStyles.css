@@ -1,0 +1,105 @@
+body {
+    background-image: url("toDoPic2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+
+#notTasks {
+    text-align: center;
+    margin: auto;
+}
+
+h1,h2 {
+    /*font-family: Helvetica, sans-serif;*/
+    font-family: 'Indie Flower', cursive;
+}
+
+h2 {
+    margin-top: -20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button {
+    border-radius: 5px;
+    height: 32px;
+    margin: 5px;
+    background-color: #ff4d94;
+    font-size: 16px;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 3px #ffb3d1;
+}
+
+#NavBar {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.NavOption {
+    display: inline;
+    font-size: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.NavOption a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+/* Change the link color on hover */
+.NavOption a:hover {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.NavOption a:active , .NavOption a.active{
+    background-color: #ffb3b3;
+    color: #663300;
+    border-radius: 5px;
+}
+
+.taskList {
+    text-align: center;
+}
+
+#tasks {
+    list-style-type: none;
+    display:inline-block;
+    text-align:left;
+}
+
+#newTask:focus {
+    outline: none;
+}
+
+#newTask[type=text] {
+    font-size: 16px;
+}
+
+input[type=checkbox]:checked + label {
+    color:#888888;
+    text-decoration: line-through;
+}
+
+input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    vertical-align: -5px; /* bandaid solution to center text with checkbox*/
+}
+
+label {
+    font-size: 22px;
+    font-family: 'Kalam', cursive;
+}

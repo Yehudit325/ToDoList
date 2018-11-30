@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="ToDoStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kalam" rel="stylesheet">
+</head>
+<body>
+    <div id="notTasks">
+        <h1>To Do List</h1>
+        <h2>Hello, you have <span id="taskCount">0</span> things to do</h2>
+
+        <input autofocus type="text" id="newTask" placeholder="New Task..."/>
+        <button onclick="addItem()">Add task</button>
+        <button onclick="clearTasks()">Clear done tasks</button>
+
+        <ul id="NavBar" >
+            <li class="NavOption"><a href="#" onclick="allT(); select(this)" class="active">All tasks</a></li>
+            <li class="NavOption"><a href="#" onclick="toDoT(); select(this)">ToDo tasks</a></li>
+            <li class="NavOption"><a href="#" onclick="doneT(); select(this)"> Done tasks</a></li>
+        </ul>
+
+    </div>
+    <div class="taskList">
+        <ul id="tasks"></ul>
+        <script src="ToDoJs.js"></script>
+    </div>
+
+</body>
+</html>
